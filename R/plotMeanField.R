@@ -85,7 +85,7 @@ plotMeanField <- function (gridData, multi.member = FALSE) {
 #' @author J Bedia \email{joaquin.bedia@@gmail.com}
 
 
-multiPlot <- function(gridData, split.dim.name, titles, multi.member) {
+multiPlot <- function(gridData, split.dim.name, titles, multi.member = FALSE) {
       dimNames <- attr(gridData$Data, "dimensions")
       index <- grep(split.dim.name, dimNames, fixed = TRUE)
       n <- dim(gridData$Data)[index]
